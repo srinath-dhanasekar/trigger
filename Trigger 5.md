@@ -1,10 +1,10 @@
 # Create the field called "Contact Relationship" checkbox on the Contact Object and Create the related object called "Contact Relationship" which is related list to the Contacts.(Lookup Relationship).
-    a. When we create contact by checking Contact Relationship checkbox, then Contact Relationship will be created automatically for that     contact.
-    b. When we change the Owner of the Contact Relationship, then the Owner name will be automatically populated in the Contact Relationship Name field.
-    c. when we delete the Contact, Then Contact Relationship will be deleted automatically
-    d. when we undelete the Contact, then Contact Relationship will be undeleted automatically
+### a. When we create contact by checking Contact Relationship checkbox, then Contact Relationship will be created automatically for that contact.
+### b. When we change the Owner of the Contact Relationship, then the Owner name will be automatically populated in the Contact Relationship Name field.
+### c. when we delete the Contact, Then Contact Relationship will be deleted automatically
+### d. when we undelete the Contact, then Contact Relationship will be undeleted automatically
 
-# Trigger
+# Trigger for contact object
 
 trigger ContactTrigger on Contact (before insert, after insert, before update, after update, before delete, after delete, after undelete) {
 
@@ -126,7 +126,7 @@ public class ContactTriggerHandler {
     }
 }
 
-# Trigger
+# Trigger for Contact Relationship object (custom object)
 
 trigger ContactRelationshipTrigger on Contact_Relationship__c (before insert, after insert, before update, after update, before delete, after delete, after undelete) {
     
