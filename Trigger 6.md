@@ -40,7 +40,7 @@ public class CustomerTriggerHandler {
             }
             When AFTER_INSERT
             {
-								caseStudy6_PopulateAccountManager();
+	    	caseStudy6_PopulateAccountManager();
             }
             When AFTER_UPDATE
             {
