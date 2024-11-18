@@ -11,7 +11,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 }
 
 
-## class
+## Handler
 public class AccountTriggerHandler {
     
     List<Account> TriggerOld;
