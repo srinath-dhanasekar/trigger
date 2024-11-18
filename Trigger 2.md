@@ -1,13 +1,13 @@
 # Create field called "Count of Contacts" on Account Object. When we add the Contacts for that Account then count will populate in the field on Account details page. When we delete the Contacts for that Account, then Count will update automatically.
 
-## Triggers
+## Trigger
 trigger ContactTrigger on Contact (before insert, after insert, before update, after update, before delete, after delete, after undelete) {
 
     ContactTriggerHandler obj = new ContactTriggerHandler();
     obj.doAction();
 }
 
-## Handler
+## Handler using Switch
 public class ContactTriggerHandler {
     
     List<Contact> TriggerOld;
