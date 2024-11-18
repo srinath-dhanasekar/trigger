@@ -2,8 +2,8 @@
 
 
 ## Answer using switch 
-trigger AccountTrigger on Account (before insert, after insert, before update, after update, before delete, after delete, after undelete){
-    
+
+trigger AccountTrigger on Account (before insert, after insert, before update, after update, before delete, after delete, after undelete){    
     AccountTriggerHandler obj = new AccountTriggerHandler();
     obj.doAction();
  
